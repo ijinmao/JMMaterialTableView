@@ -50,7 +50,7 @@ Set the cell size:
 
 Then you can use `JMMaterialTableView` just as a normal `UICollectionView`.
 
-Restriction
+Restrictions
 ---
 `JMMaterialTableView` is not supported **dynamic** cell height yet. 
 
@@ -65,8 +65,10 @@ Configuration
 You can **customize** following properties in `JMMaterialTableView.swift` to change the default view:
 
 * cellSize
-* isTransformEnabled   		when set false, the cell size will not reduce after scrolling
-* enableAutoScroll			when set true, the tableView will always scroll to a cell top position
+* isTransformEnabled   		
+	* when set false, the cell size will not reduce after scrolling
+* enableAutoScroll			
+	* when set true, the tableView will always scroll to a cell top position
 * enableCellShadow		
 * scrollDecelerationRate 		
 * shadowOffset			
