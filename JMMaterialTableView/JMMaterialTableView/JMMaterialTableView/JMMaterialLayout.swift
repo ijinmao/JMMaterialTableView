@@ -15,7 +15,7 @@ protocol JMMaterialLayoutDelegate {
 
 class JMMaterialLayout: UICollectionViewFlowLayout {
     
-    var isTransformEnabled: Bool = true
+    var enableTransformation: Bool = true
     
     var kAttributesTransform: CGFloat = 0.03
     
@@ -62,12 +62,12 @@ class JMMaterialLayout: UICollectionViewFlowLayout {
         var itemOrigin = attributes.frame.origin
         let deltaY: CGFloat = (finalPosition - itemOrigin.y) / CGRectGetHeight(attributes.frame)
         itemOrigin.y = finalPosition
-
+        
         let transformCoef: CGFloat = (1 - deltaY * kAttributesTransform)
-        if isTransformEnabled {
+        if enableTransformation {
             attributes.transform = CGAffineTransformMakeScale(transformCoef, transformCoef)
-            attributes.frame = CGRectMake(itemOriginalFrame.origin.x, itemOrigin.y, itemOriginalFrame.size.width, itemOriginalFrame.size.height)
         }
+        attributes.frame = CGRectMake(itemOriginalFrame.origin.x, itemOrigin.y, itemOriginalFrame.size.width, itemOriginalFrame.size.height)
         attributes.zIndex = attributes.indexPath.row;
         
     }

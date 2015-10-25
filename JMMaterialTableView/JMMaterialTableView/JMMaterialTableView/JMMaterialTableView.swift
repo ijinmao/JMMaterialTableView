@@ -10,20 +10,20 @@ import Foundation
 import UIKit
 
 class JMMaterialTableView: UICollectionView, UIScrollViewDelegate, UICollectionViewDelegateFlowLayout, JMMaterialLayoutDelegate {
-    // ------ configurable params
+    // ------ configurable properties
     
     var shadowOffset: CGFloat = -3.0
     var shadowRadius: CGFloat = 2.0
     var shadowOpacity: Float = 0.15
     var shadowColor: CGColorRef = UIColor.darkGrayColor().CGColor
-    var transformCoef: CGFloat = 0.03 {
+    var transformCoef: CGFloat = 0.04 {
         didSet {
             materialLayout?.kAttributesTransform = transformCoef
         }
     }
-    var isTransformEnabled: Bool = true {
+    var enableTransformation: Bool = true {
         didSet {
-            materialLayout?.isTransformEnabled = isTransformEnabled
+            materialLayout?.enableTransformation = enableTransformation
         }
     }
     var enableAutoScroll: Bool = true
@@ -72,9 +72,6 @@ class JMMaterialTableView: UICollectionView, UIScrollViewDelegate, UICollectionV
     
     // MARK: JMMaterialLayoutDelegate
     func updateItemsAttributes(allItemsAttributes: [UICollectionViewLayoutAttributes]?) {
-        if !enableCellShadow {
-            return
-        }
         //the index of the first cell of not transformed
         var notTransformCellIndexPath: NSIndexPath? = nil
         //get indexs of shadowed cell and normal cells
@@ -127,15 +124,19 @@ class JMMaterialTableView: UICollectionView, UIScrollViewDelegate, UICollectionV
                     if let cell = self.cellForItemAtIndexPath(indexPath) {
                         cell.hidden = false
                         //默认radius == 3.0
-                        if cell.layer.shadowOpacity == 0.0 {
-                            cell.layer.shadowColor = shadowColor
-                            cell.layer.shadowRadius = shadowRadius
-                            cell.layer.shadowOffset = CGSizeMake(0, shadowOffset)
-                            animationShadowOpacity(0, to: shadowOpacity, duration: shadowAnimationDuration, cell: cell)
+                        if enableCellShadow {
+                            if cell.layer.shadowOpacity == 0.0 {
+                                cell.layer.shadowColor = shadowColor
+                                cell.layer.shadowRadius = shadowRadius
+                                cell.layer.shadowOffset = CGSizeMake(0, shadowOffset)
+                                animationShadowOpacity(0, to: shadowOpacity, duration: shadowAnimationDuration, cell: cell)
+                            }
                         }
                     }
                 }
             }
+
+            
             //remove shadow of normal cells
             for indexPath in normalIndexPaths {
                 //confirm whether the cells already hidden
