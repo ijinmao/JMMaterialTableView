@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JMMaterialTableView"
-  s.version      = "0.1.0"
-  s.summary      = "A short description of JMMaterialTableView."
+  s.version      = "0.1.1"
+  s.summary      = "JMMaterialTableView is a tableView inspired by Primer iOS app in Swift."
 
   s.description  = <<-DESC
-                   A longer description of JMMaterialTableView in Markdown format.
+                   The UX of Primer iOS app is amazing, and Google's Primer team wrote an great article(https://medium.com/google-design/designing-a-ux-for-learning-ebed4fa0a798#.2ee2djini) about how they approached UX. JMMaterialTableView is inspired by them.
 
                    * Think: Why did you write this? What is the focus? What does it do?
                    * CocoaPods will be using this to generate tags, and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "http://EXAMPLE/JMMaterialTableView"
+  s.homepage     = "https://github.com/ijinmao/JMMaterialTableView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "" => "" }
+  s.author           = { "ijinmao" => "340052204@qq.com" }
   # Or just: s.author    = ""
   # s.authors            = { "" => "" }
   # s.social_media_url   = "http://twitter.com/"
@@ -64,8 +64,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, '8.0'
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -78,8 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/JMMaterialTableView.git", :tag => "0.0.1" }
-
+  s.source       = { :git => "https://github.com/<GITHUB_USERNAME>/JMMaterialTableView.git", :tag => "0.1.1" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -89,8 +87,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "JMMaterialTableView", "JMMaterialTableView/*.swift"
+  s.exclude_files = "JMMaterialTableView/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
