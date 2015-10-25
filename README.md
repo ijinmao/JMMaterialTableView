@@ -6,7 +6,7 @@ JMMaterialTableView ![License MIT](https://go-shields.herokuapp.com/license-MIT-
 
 Overview
 ---
-`JMMaterialTableView` is a tableView inspired by [Primer](http://www.yourprimer.com/) iOS app in Swift.
+`JMMaterialTableView` is a material design tableView inspired by [Primer](http://www.yourprimer.com/) iOS app in Swift.
 
 The UX of Primer iOS app is amazing, and Google's Primer team wrote a great [article](https://medium.com/google-design/designing-a-ux-for-learning-ebed4fa0a798#.2ee2djini) about how they approached UX.
 
