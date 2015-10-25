@@ -15,9 +15,9 @@
 		A6C094441BDC785C003CC163 /* JMMaterialTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C094431BDC785C003CC163 /* JMMaterialTableViewTests.swift */; };
 		A6C0944F1BDC785C003CC163 /* JMMaterialTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0944E1BDC785C003CC163 /* JMMaterialTableViewUITests.swift */; };
 		A6C094611BDC78BC003CC163 /* JMMaterialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0945C1BDC78BC003CC163 /* JMMaterialCell.swift */; };
-		A6C094621BDC78BC003CC163 /* JMMaterialLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0945E1BDC78BC003CC163 /* JMMaterialLayout.swift */; };
-		A6C094631BDC78BC003CC163 /* JMMaterialTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0945F1BDC78BC003CC163 /* JMMaterialTableView.swift */; };
 		A6C094641BDC78BC003CC163 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C094601BDC78BC003CC163 /* TableViewDataSource.swift */; };
+		A6DB022E1BDCE48F00CE13DB /* JMMaterialLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB022C1BDCE48F00CE13DB /* JMMaterialLayout.swift */; };
+		A6DB022F1BDCE48F00CE13DB /* JMMaterialTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB022D1BDCE48F00CE13DB /* JMMaterialTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +52,9 @@
 		A6C0944E1BDC785C003CC163 /* JMMaterialTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMMaterialTableViewUITests.swift; sourceTree = "<group>"; };
 		A6C094501BDC785C003CC163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6C0945C1BDC78BC003CC163 /* JMMaterialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMMaterialCell.swift; sourceTree = "<group>"; };
-		A6C0945E1BDC78BC003CC163 /* JMMaterialLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMMaterialLayout.swift; sourceTree = "<group>"; };
-		A6C0945F1BDC78BC003CC163 /* JMMaterialTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMMaterialTableView.swift; sourceTree = "<group>"; };
 		A6C094601BDC78BC003CC163 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		A6DB022C1BDCE48F00CE13DB /* JMMaterialLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMMaterialLayout.swift; sourceTree = "<group>"; };
+		A6DB022D1BDCE48F00CE13DB /* JMMaterialTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JMMaterialTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +139,8 @@
 		A6C0945D1BDC78BC003CC163 /* JMMaterialTableView */ = {
 			isa = PBXGroup;
 			children = (
-				A6C0945E1BDC78BC003CC163 /* JMMaterialLayout.swift */,
-				A6C0945F1BDC78BC003CC163 /* JMMaterialTableView.swift */,
+				A6DB022C1BDCE48F00CE13DB /* JMMaterialLayout.swift */,
+				A6DB022D1BDCE48F00CE13DB /* JMMaterialTableView.swift */,
 			);
 			path = JMMaterialTableView;
 			sourceTree = "<group>";
@@ -278,9 +278,9 @@
 			files = (
 				A6C094641BDC78BC003CC163 /* TableViewDataSource.swift in Sources */,
 				A6C094611BDC78BC003CC163 /* JMMaterialCell.swift in Sources */,
-				A6C094621BDC78BC003CC163 /* JMMaterialLayout.swift in Sources */,
 				A6C094311BDC785B003CC163 /* ViewController.swift in Sources */,
-				A6C094631BDC78BC003CC163 /* JMMaterialTableView.swift in Sources */,
+				A6DB022F1BDCE48F00CE13DB /* JMMaterialTableView.swift in Sources */,
+				A6DB022E1BDCE48F00CE13DB /* JMMaterialLayout.swift in Sources */,
 				A6C0942F1BDC785B003CC163 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +510,7 @@
 				A6C094551BDC785C003CC163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6C094561BDC785C003CC163 /* Build configuration list for PBXNativeTarget "JMMaterialTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +519,7 @@
 				A6C094581BDC785C003CC163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A6C094591BDC785C003CC163 /* Build configuration list for PBXNativeTarget "JMMaterialTableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +528,7 @@
 				A6C0945B1BDC785C003CC163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
