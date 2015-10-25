@@ -21,7 +21,7 @@ The demo in this project looks like this:
 
 You can build a card table view like this:
 
-![screenshot1](https://raw.githubusercontent.com/ijinmao/JMMaterialTableView/master/demoScreen2.gif)
+![screenshot1](https://raw.githubusercontent.com/ijinmao/JMMaterialTableView/138a1e1686bcbaeabdfc5a84f01849b26e51bb6e/demoScreen2.gif)
 
 Installation
 ---
